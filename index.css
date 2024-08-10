@@ -1,0 +1,315 @@
+:root {
+  /* colors */
+  --clr-white: #FFFFFF;
+  --clr-cream: #F2EAE2;
+  --clr-aurometal: #6C7289;
+  --clr-deep-aquarine: #3D8168;
+  --clr-deep-aquarine-hover: #1A4032;
+  --clr-gun-metal: #1A4032;
+
+  /* font-families */
+  --ff-fraunces: "Fraunces", serif;
+  --ff-montserrat: "Montserrat", serif;
+
+  /* fonts sizes*/
+  --fs-80: 5rem;
+  --fs-72: 4.5rem;
+  --fs-60: 3.75rem;
+  --fs-56: 3.5rem;
+  --fs-48: 3rem;
+  --fs-32: 2rem;
+  --fs-28: 1.75rem;
+  --fs-24: 1.5rem;
+  --fs-20: 1.25rem;
+  --fs-18: 1.125rem;
+  --fs-16: 1rem;
+  --fs-14: 0.875rem;
+  --fs-13: 0.813rem;
+  --fs-12: 0.75rem;
+
+  /* line height */
+  --lh-180: 180%;
+  --lh-150: 150%;
+  --lh-120: 120%;
+  --lh-100: 100%;
+  --lh-40: 40%;
+
+  /* letter spacing */
+  --ls-0: 0rem;
+
+  /* spacing */
+  --sp-736: 46rem;
+  --sp-600: 37.5rem;
+  --sp-512: 32rem;
+  --sp-450: 28.125rem;
+  --sp-395: 24.688rem;
+  --sp-375: 23.438rem;
+  --sp-368: 23rem;
+  --sp-356: 22.25rem;
+  --sp-343: 21.438rem;
+  --sp-315: 19.688rem;
+  --sp-300: 18.75rem;
+  --sp-296: 18.5rem;
+  --sp-295: 18.438rem;
+  --sp-260: 16.25rem;
+  --sp-240: 15rem;
+  --sp-200: 12.5rem;
+  --sp-168: 10.5rem;
+  --sp-151: 9.438rem;
+  --sp-141: 8.813rem;
+  --sp-140: 8.75rem;
+  --sp-144: 9rem;
+  --sp-128: 8rem;
+  --sp-120: 7.5rem;
+  --sp-112: 7rem;
+  --sp-94: 5.875rem;
+  --sp-88: 5.5rem;
+  --sp-80: 5rem;
+  --sp-72: 4.5rem;
+  --sp-69: 4.313rem;
+  --sp-64: 4rem;
+  --sp-56: 3.5rem;
+  --sp-54: 3.375rem;
+  --sp-48: 3rem;
+  --sp-46: 2.875rem;
+  --sp-44: 2.75rem;
+  --sp-42: 2.625rem;
+  --sp-40: 2.5rem;
+  --sp-38: 2.375rem;
+  --sp-35: 2.188rem;
+  --sp-31: 1.938rem;
+  --sp-32: 2rem;
+  --sp-30: 1.875rem;
+  --sp-29: 1.813rem;
+  --sp-28: 1.75rem;
+  --sp-24: 1.5rem;
+  --sp-23: 1.438rem;
+  --sp-20: 1.25rem;
+  --sp-19: 1.188rem;
+  --sp-18: 1.125rem;
+  --sp-17: 1.063rem;
+  --sp-15: 0.938rem;
+  --sp-16: 1rem;
+  --sp-12: 0.75rem;
+  --sp-8: 0.5rem;
+  --sp-5: 0.313rem;
+  --sp-2: 0.125rem;
+  --sp-1: 0.063rem;
+}
+
+/* ----------------------- */
+/* Reset                   */
+/* ----------------------- */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+/* set up the body */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--ff-montserrat);
+  font-size: var(--fs-14);
+  color: var(--clr-aurometal);
+  font-weight: 500;
+  background-color: var(--clr-cream);
+  min-height: 100vh;
+}
+
+/* make images easier to work with */
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ----------------------- */
+/* Utility classes         */
+/* ----------------------- */
+
+.card {
+  width: var(--sp-343);
+  border-radius: var(--sp-12);
+  background-color: var(--clr-white);
+  overflow: hidden;
+}
+
+.hero-desktop {
+  display: none;
+}
+
+.description {
+  padding: var(--sp-24);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.title-section  {
+  height: var(--sp-15);
+  font-size: var(--fs-12);
+  letter-spacing: var(--sp-5);
+  margin-bottom: var(--sp-12);
+}
+
+.title-main-section {
+  font-family: var(--ff-fraunces);
+  font-size: var(--fs-32);
+  font-weight: 700;
+  line-height: var(--sp-32);
+  color: var(--clr-gun-metal);
+  margin-bottom: var(--sp-16);
+}
+
+.description-section {
+  text-align: top;
+  line-height: var(--sp-23);
+  margin-bottom: var(--sp-24);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-19);
+  margin-bottom: var(--sp-20);  
+}
+
+.current-price {
+  font-family: var(--ff-fraunces);
+  font-weight: 600;
+  font-size: var(--fs-32);
+  line-height: 1;
+  color: var(--clr-deep-aquarine);
+}
+
+.price-before {
+  font-size: var(--fs-13);
+  text-decoration:line-through;
+}
+
+.btn-add-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--sp-12);
+  font-weight: 600;
+  text-decoration: none;
+  height: var(--sp-48);
+  color: var(--clr-white);
+  border-radius: var(--sp-8);
+  background-color: var(--clr-deep-aquarine);
+}
+
+/* ----------------------- */
+/* Components              */
+/* ----------------------- */
+
+.btn-add-cart:hover, 
+.btn-add-cart:focus,
+.btn-add-cart:active {
+  cursor: pointer;
+  background-color: var(--clr-deep-aquarine-hover);
+}
+
+/* ----------------------- */
+/* Devices                 */
+/* ----------------------- */
+
+@media (min-width: 768px){
+  .card {
+    display: flex;
+    width: var(--sp-600);
+    height: var(--sp-450);
+  }
+
+  .hero-mobile {
+    display: none;
+  }
+
+  .hero-desktop {
+    display: block;
+  }
+
+  .hero-container {
+    width: var(--sp-300);
+  }
+
+  .description {
+    width: var(--sp-300);
+    padding: var(--sp-32);
+  }
+
+  .title-section {
+    margin-bottom: var(--sp-20);
+  }
+
+  .title-main-section {
+    margin-bottom: var(--sp-24);
+  }
+
+  .description-section {
+    margin-bottom: var(--sp-29);
+  }
+
+  .price {
+    margin-bottom: var(--sp-30);
+  }
+}
+
